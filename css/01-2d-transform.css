@@ -1,0 +1,797 @@
+/* TRANSFORM */
+
+/* Мой пример */
+/* .box {
+  width: 100px;
+  height: 100px;
+
+  background-color: tomato;
+}
+
+.box:hover {
+  transform: scale(1.15);
+} */
+
+/* Пример на курсах */
+
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.box:nth-child(1) {
+  background-color: orange;
+
+  animation: animate125 3000ms infinite 1000ms;
+}
+
+.box:nth-child(1)::before {
+  content: "scale(1.25)";
+}
+
+.box:nth-child(2) {
+  background-color: #03a9f4;
+}
+
+.box:nth-child(2)::before {
+  content: "scale(1)";
+}
+
+.box:nth-child(3) {
+  background-color: palevioletred;
+
+  animation: animate75 3000ms infinite 1000ms;
+}
+
+.box:nth-child(3)::before {
+  content: "scale(0.75)";
+}
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate75 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */
+
+/* СВОЙСТВО ROTATE */
+
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.box:nth-child(1) {
+  background-color: orange;
+
+  animation: animate30 3000ms infinite 1000ms;
+}
+
+.box:nth-child(1)::before {
+  content: "rotate(30deg)";
+}
+
+.box:nth-child(2) {
+  background-color: #03a9f4;
+
+  animation: animate115 3000ms infinite 1000ms;
+}
+
+.box:nth-child(2)::before {
+  content: "rotate(115deg)";
+}
+
+.box:nth-child(3) {
+  background-color: palevioletred;
+
+  animation: animate45 3000ms infinite 1000ms;
+}
+
+.box:nth-child(3)::before {
+  content: "rotate(-45deg)";
+}
+
+@keyframes animate30 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes animate115 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(115deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes animate45 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+} */
+
+/* СВОЙСТВО TRANSLATE (СМЕЩЕНИЕ) */
+
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.box:nth-child(1) {
+  background-color: orange;
+
+  animation: animateX50 3000ms infinite 1000ms;
+}
+
+.box:nth-child(1)::before {
+  content: "translateX(50px)";
+}
+
+.box:nth-child(2) {
+  background-color: #03a9f4;
+
+  animation: animateY110 3000ms infinite 1000ms;
+}
+
+.box:nth-child(2)::before {
+  content: "translateY(110px)";
+}
+
+.box:nth-child(3) {
+  background-color: palevioletred;
+
+  animation: animateX50Y100 3000ms infinite 1000ms;
+}
+
+.box:nth-child(3)::before {
+  content: "translate(-50px,-100px)";
+}
+
+@keyframes animateX50 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateY110 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(110px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateX50Y100 {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(-50px, -100px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+} */
+
+/* ЦЕНТРИРОВАНИЕ ЭЛЕМЕНТА */
+
+/* Вариант-1 через позиционирование и transform -> translate */
+
+/* .container {
+  position: relative;
+  max-width: 500px;
+  height: 300px;
+
+  background-color: blue;
+  border: 10px solid darkblue;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: yellow;
+  border: 10px solid orange;
+  border-radius: 10px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+} */
+
+/* Вариант-2 через display -> flex */
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  height: 300px;
+
+  background-color: blue;
+  border: 10px solid darkblue;
+  border-radius: 10px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+
+  background-color: yellow;
+  border: 10px solid orange;
+  border-radius: 10px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+} */
+
+/* ИСКАЖЕНИК (SKEW) */
+
+/* .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-left: 15px;
+
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.box:nth-child(1) {
+  background-color: orange;
+
+  animation: animateX30 3000ms infinite 1000ms;
+}
+
+.box:nth-child(1)::before {
+  content: "skewX(30deg)";
+}
+
+.box:nth-child(2) {
+  background-color: #03a9f4;
+
+  animation: animateY30 3000ms infinite 1000ms;
+}
+
+.box:nth-child(2)::before {
+  content: "skewY(30deg)";
+}
+
+.box:nth-child(3) {
+  background-color: palevioletred;
+
+  animation: animateX30Y30 3000ms infinite 1000ms;
+}
+
+.box:nth-child(3)::before {
+  content: "skew(30deg, 30deg)";
+}
+
+@keyframes animateX30 {
+  0% {
+    transform: skewX(0);
+  }
+
+  50% {
+    transform: skewX(30deg);
+  }
+
+  100% {
+    transform: skewX(0);
+  }
+}
+
+@keyframes animateY30 {
+  0% {
+    transform: skewY(0);
+  }
+
+  50% {
+    transform: skewY(30deg);
+  }
+
+  100% {
+    transform: skewY(0);
+  }
+}
+
+@keyframes animateX30Y30 {
+  0% {
+    transform: skew(0);
+  }
+
+  50% {
+    transform: skew(30deg, 30deg);
+  }
+
+  100% {
+    transform: skew(0);
+  }
+} */
+
+/* ТОЧКА ТРАНСФОРИАЦИИ (TRANSFORM-ORIGIN) */
+
+/* Мой пример */
+
+/* .container {
+  width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-basis: calc(100% / 3 - 20px);
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  max-width: 200px;
+  height: 200px;
+  border: 4px solid tomato;
+  border-radius: 4px;
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.box:nth-child(1)::before {
+  content: "top left";
+}
+
+.box:nth-child(2)::before {
+  content: "top center";
+}
+
+.box:nth-child(3)::before {
+  content: "top right";
+}
+
+.box:nth-child(4)::before {
+  content: "center left";
+}
+
+.box:nth-child(5)::before {
+  content: "center center";
+}
+
+.box:nth-child(6)::before {
+  content: "center right";
+}
+
+.box:nth-child(7)::before {
+  content: "bottom left";
+}
+
+.box:nth-child(8)::before {
+  content: "bottom center";
+}
+
+.box:nth-child(9)::before {
+  content: "bottom right";
+}
+
+.point {
+  position: absolute;
+  z-index: 2;
+
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.box:nth-child(1) .point {
+  top: -12px;
+  left: -12px;
+}
+
+.box:nth-child(2) .point {
+  top: -12px;
+  left: 88px;
+}
+
+.box:nth-child(3) .point {
+  top: -12px;
+  right: -12px;
+}
+
+.box:nth-child(4) .point {
+  top: 88px;
+  left: -12px;
+}
+
+.box:nth-child(5) .point {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.box:nth-child(6) .point {
+  top: 88px;
+  right: -12px;
+}
+
+.box:nth-child(7) .point {
+  bottom: -20px;
+  left: -2px;
+
+  transform: translate(-50%, -50%);
+}
+
+.box:nth-child(8) .point {
+  bottom: -20px;
+  left: 98px;
+
+  transform: translate(-50%, -50%);
+}
+
+.box:nth-child(9) .point {
+  bottom: -20px;
+  right: -22px;
+
+  transform: translate(-50%, -50%);
+}
+
+.box-rotate {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: 1;
+
+  width: 200px;
+  height: 200px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 4px;
+
+  animation: animate360 3000ms linear 1000ms infinite;
+}
+
+.box:nth-child(1) .box-rotate {
+  transform-origin: top left;
+}
+
+.box:nth-child(2) .box-rotate {
+  transform-origin: top center;
+}
+
+.box:nth-child(3) .box-rotate {
+  transform-origin: top right;
+}
+
+.box:nth-child(4) .box-rotate {
+  transform-origin: left center;
+}
+
+.box:nth-child(5) .box-rotate {
+  transform-origin: center;
+}
+
+.box:nth-child(6) .box-rotate {
+  transform-origin: right center;
+}
+
+.box:nth-child(7) .box-rotate {
+  transform-origin: bottom left;
+}
+
+.box:nth-child(8) .box-rotate {
+  transform-origin: bottom center;
+}
+
+.box:nth-child(9) .box-rotate {
+  transform-origin: bottom right;
+}
+
+@keyframes animate360 {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+} */
+
+/* Пример на курсах */
+
+:root {
+  --dot-size: 16px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid tomato;
+  border-radius: 4px;
+  font-size: 17px;
+}
+
+.box::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 120px;
+  height: 120px;
+
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: rotateWithOrigin 3000ms linear 1000ms infinite;
+}
+
+.box:nth-child(1)::before {
+  transform-origin: top left;
+}
+
+.box:nth-child(2)::before {
+  transform-origin: top center;
+}
+
+.box:nth-child(3)::before {
+  transform-origin: top right;
+}
+
+.box:nth-child(4)::before {
+  transform-origin: center left;
+}
+
+.box:nth-child(5)::before {
+  transform-origin: center center;
+}
+
+.box:nth-child(6)::before {
+  transform-origin: center right;
+}
+
+.box:nth-child(7)::before {
+  transform-origin: bottom left;
+}
+
+.box:nth-child(8)::before {
+  transform-origin: bottom center;
+}
+
+.box:nth-child(9)::before {
+  transform-origin: bottom right;
+}
+
+.box::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.box:nth-child(1)::after {
+  top: calc(var(--dot-size) / -2);
+  left: calc(var(--dot-size) / -2);
+}
+
+.box:nth-child(2)::after {
+  top: calc(var(--dot-size) / -2);
+  left: center;
+}
+
+.box:nth-child(3)::after {
+  top: calc(var(--dot-size) / -2);
+  right: calc(var(--dot-size) / -2);
+}
+
+.box:nth-child(4)::after {
+  top: center;
+  left: calc(var(--dot-size) / -2);
+}
+
+.box:nth-child(5)::after {
+  top: center;
+  left: center;
+}
+
+.box:nth-child(6)::after {
+  top: center;
+  right: calc(var(--dot-size) / -2);
+}
+
+.box:nth-child(7)::after {
+  bottom: calc(var(--dot-size) / -2);
+  left: calc(var(--dot-size) / -2);
+}
+
+.box:nth-child(8)::after {
+  bottom: calc(var(--dot-size) / -2);
+  left: center;
+}
+
+.box:nth-child(9)::after {
+  bottom: calc(var(--dot-size) / -2);
+  right: calc(var(--dot-size) / -2);
+}
+
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

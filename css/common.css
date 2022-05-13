@@ -1,0 +1,42 @@
+:root {
+  --primary-text-color: #2a2a2a;
+  --secondary-text-color: #fff;
+  --primary-bg-color: #f9f9fd;
+  --accent-color: #2a84ce;
+}
+
+body {
+  font-size: 14px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.menu > .item + .item {
+  margin-top: 4px;
+}
